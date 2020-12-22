@@ -6075,7 +6075,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-    background-color: #27A8BD !important;
+    background-color: rgba(14,20,21,1.00) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -7475,7 +7475,7 @@ button.bg-dark:focus {
 }
 
 .m-0 {
-  margin: 0 !important;
+    margin: 0 !important;
 }
 
 .mt-0,
@@ -9777,7 +9777,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #bd5d38 !important;
+    color: green !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
