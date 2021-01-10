@@ -76,9 +76,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
-p {
-
-}
 abbr[title], abbr[data-original-title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
@@ -142,9 +139,26 @@ a:not([href]):not([class]) {
   text-decoration: none;
 }
 a:not([href]):not([class]):hover {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
+.hire-me {
+    text-align: center;
+
+}
+
+.hire-me {
+
+
+}
+
+.scroll-down-arrow   {
+	position: absolute;
+    top: 90%;
+    left: 50%;
+/*    transform: translate(-50%, -50%);*/
+}
+
 pre, code, kbd, samp {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em;
@@ -7998,10 +8012,13 @@ section.resume-section .resume-section-content {
 .hero-text {
     text-align: left;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-70%, -50%);
+    width: 35rem;
+    top: 15%;
+    left: 10%;
+    /*    transform: translate(-70%, -50%);*/
     color: white;
+    bottom: 0px;
+    right: 0px;
 }
 @media (min-width: 768px) {
   section.resume-section {
