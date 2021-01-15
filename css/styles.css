@@ -153,7 +153,7 @@ a:not([href]):not([class]):hover {
 }
 
 .scroll-down-arrow   {
-	position: absolute;
+    position: absolute;
     top: 90%;
     left: 50%;
 /*    transform: translate(-50%, -50%);*/
@@ -8006,11 +8006,11 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 .hero-text {
-    text-align: left;
-    position: absolute;
+    text-align: center;
+    position: relative;
     width: 35rem;
     top: 15%;
-    left: 10%;
+    left: auto;
     /*    transform: translate(-70%, -50%);*/
     color: white;
     bottom: 0px;
@@ -8037,7 +8037,8 @@ section.resume-section .resume-section-content {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+	  height: 100vh;
+/*    position: relative;*/
   }
 }
 .hero-page {
