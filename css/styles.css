@@ -42,6 +42,10 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+#skills .resume-section-content .dev-displaly {
+    display: none;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -49,10 +53,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
 body {
   margin: 0;
@@ -139,26 +143,32 @@ a:not([href]):not([class]) {
   text-decoration: none;
 }
 a:not([href]):not([class]):hover {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 .hire-me {
-    text-align: center;
-
+  text-align: center;
 }
-
-.hire-me {
-
-
+.hire-me {}
+.scroll-arrow {
+  position: relative;
+  top: 50%;
+  left: 48%;
+  /*
+	animation-name: scrollarrow;
+	animation-duration: infinite;
+*/
+  animation: scrollarrow 4s infinite;
+  /*  transform: translate(-0%, -0%);*/
 }
-
-.scroll-down-arrow   {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-/*    transform: translate(-50%, -50%);*/
+@keyframes scrollarrow {
+  from {
+    opacity: 0.5
+  }
+  to {
+    opacity: 1.0
+  }
 }
-
 pre, code, kbd, samp {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em;
@@ -170,8 +180,8 @@ pre {
   -ms-overflow-style: scrollbar;
 }
 img {
-    vertical-align: middle;
-    /* [disabled]border-style: none; */
+  vertical-align: middle;
+  /* [disabled]border-style: none; */
 }
 .container-fluid.p-0 #about img {
   object-fit: cover;
@@ -363,7 +373,7 @@ mark, .mark {
   display: inline-block;
 }
 .list-inline-item:not(:last-child) {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 .initialism {
   font-size: 90%;
@@ -393,7 +403,6 @@ mark, .mark {
   max-width: 100%;
   height: auto;
 }
-
 .figure-img {
   margin-bottom: 0.5rem;
   line-height: 1;
@@ -462,12 +471,6 @@ pre code {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
   }
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -0.75rem;
-  margin-left: -0.75rem;
 }
 .no-gutters {
   margin-right: 0;
@@ -5230,6 +5233,9 @@ a.bg-danger:hover, a.bg-danger:focus, button.bg-danger:hover, button.bg-danger:f
 .bg-light {
   background-color: #f8f9fa !important;
 }
+#portfolio {
+  /* [disabled]display: none; */
+}
 a.bg-light:hover, a.bg-light:focus, button.bg-light:hover, button.bg-light:focus {
   background-color: #dae0e5 !important;
 }
@@ -7652,7 +7658,6 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus {
 .text-center {
   text-align: center !important;
 }
-
 @media (min-width: 576px) {
   .text-sm-left {
     text-align: left !important;
@@ -7724,23 +7729,20 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus {
 .font-italic {
   font-style: italic !important;
 }
-.text-white {
-  color: #fff !important;
-}
 .text-primary {
-    color: #00FF00 !important;
+  color: #00FF00 !important;
 }
 .hero-text button {
-    margin: 70px;
-    border: 2px solid #4CAF50;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: white;
-    background-color: rgba(255, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 20px;
-    cursor: pointer;
+  margin: 70px;
+  border: 2px solid #4CAF50;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
 }
 .hero-text button:hover {
   background-color: orange;
@@ -7913,10 +7915,11 @@ p.lead {
   font-weight: 400;
 }
 .subheading {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.5rem;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    max-width: inherit;
 }
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
@@ -7991,7 +7994,7 @@ p.lead {
   background-color: #bd5d38;
 }
 .dev-icons {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 section.resume-section {
   display: flex;
@@ -8006,15 +8009,15 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 .hero-text {
-    text-align: center;
-    position: relative;
-    width: 35rem;
-    top: 15%;
-    left: auto;
-    /*    transform: translate(-70%, -50%);*/
-    color: white;
-    bottom: 0px;
-    right: 0px;
+  text-align: center;
+  position: relative;
+  width: 35rem;
+  top: 5%;
+  left: 18%;
+  /*    transform: translate(-70%, -50%);*/
+  color: white;
+  bottom: 0px;
+  right: 0px;
 }
 @media (min-width: 768px) {
   section.resume-section {
@@ -8029,16 +8032,16 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
   .hero-img {
-    background-image: -webkit-linear-gradient(90deg,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.50) 100%), url(../assets/img/header-rana.png);
-    background-image: -moz-linear-gradient(90deg,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.50) 100%), url(../assets/img/header-rana.png);
-    background-image: -o-linear-gradient(90deg,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.50) 100%), url(../assets/img/header-rana.png);
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.50) 100%), url(../assets/img/header-rana.png);
+    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.50) 100%), url(../assets/img/header-rana.png);
+    background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.50) 100%), url(../assets/img/header-rana.png);
+    background-image: -o-linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.50) 100%), url(../assets/img/header-rana.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.50) 100%), url(../assets/img/header-rana.png);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-	  height: 100vh;
-/*    position: relative;*/
+    height: 100vh;
+    /*    position: relative;*/
   }
 }
 .hero-page {
@@ -8057,8 +8060,6 @@ section.gallery-section {
     visibility: hidden display: none;
   display: none;
 }
-
-
 section#contact {
   background-color: #212529;
   background-image: url("../assets/img/map-image.png");
@@ -8071,8 +8072,7 @@ section#contact .section-heading {
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
 }
-section#contact form#contactForm .form-group input,
-section#contact form#contactForm .form-group textarea {
+section#contact form#contactForm .form-group input, section#contact form#contactForm .form-group textarea {
   padding: 1.25rem;
 }
 section#contact form#contactForm .form-group input.form-control {
@@ -8112,32 +8112,22 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
 }
-
 .footer {
-    text-align: center;
-    font-size: 0.9rem;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-color: rgba(10,14,15,1.00);
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: rgba(10, 14, 15, 1.00);
 }
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -0.75rem;
-  margin-left: -0.75rem;
+.col-sm-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
 }
-
+.mb-4, .my-4 {
+  margin-bottom: 1.5rem !important;
+}
+@media (min-width:992px) {
   .col-lg-4 {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
-
-  .col-sm-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-.mb-4,
-.my-4 {
-  margin-bottom: 1.5rem !important;
 }
