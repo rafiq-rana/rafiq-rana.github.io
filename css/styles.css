@@ -149,7 +149,6 @@ a:not([href]):not([class]):hover {
 .hire-me {
   text-align: center;
 }
-.hire-me {}
 .scroll-arrow {
   position: relative;
   top: 50%;
@@ -8031,6 +8030,10 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+#interests {
+    display: none;
+}
+
   .hero-img {
     background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.50) 100%), url(../assets/img/header-rana.png);
     background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.50) 100%), url(../assets/img/header-rana.png);
