@@ -8010,7 +8010,7 @@ section.resume-section .resume-section-content {
 .hero-text {
     text-align: center;
     position: relative;
-    width: 35rem;
+    /* [disabled]width: 35rem; */
     top: 5%;
     left: 18%;
     /*    transform: translate(-70%, -50%);*/
@@ -8134,4 +8134,12 @@ section#contact form#contactForm :-ms-input-placeholder {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
+}
+
+@media (max-width:414px){
+	.hero-text{
+		color: black;
+		    top: 0px;
+    left: 0px;
+	}
 }
