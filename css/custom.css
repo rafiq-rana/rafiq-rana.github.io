@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bg-navbar{
+	background: #0e1415;
+}
+
+.width-auto {
+    width: auto;
+}
+
+.text-lg {
+    font-size: 2rem;
+}
+
+.container #about img {
+  object-fit: cover;
+}
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: #28a745;
+}
+
+#sideNav .navbar-brand .img-profile {
+  max-width: 11rem;
+  max-height: 11rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width:414px) {
+  .hero-text {
+    color: black;
+    top: 0px;
+    left: 0px;
+  }
+}
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+/*    flex-direction: column;*/
+    width: 17rem;
+    height: 100vh;
+  }
+  .hero-img {
+    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.50) 100%), url(../assets/img/header-rana.png);
+    background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.50) 100%), url(../assets/img/header-rana.png);
+    background-image: -o-linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.50) 100%), url(../assets/img/header-rana.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.50) 100%), url(../assets/img/header-rana.png);
+    background-repeat: no-repeat;
+	background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+}
