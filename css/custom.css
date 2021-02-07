@@ -181,14 +181,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: white;
 }
 .hero-text {
-  text-align: center;
-  position: relative;
-  /* [disabled]width: 35rem; */
-  top: 5%;
-  left: 18%;
-  /*    transform: translate(-70%, -50%);*/
-  color: white;
-  bottom: 0px;
-  right: 0px;
-  overflow: hidden;
+    text-align: center;
+    position: relative;
+    /* [disabled]width: 35rem; */
+    left: 18%;
+    /*    transform: translate(-70%, -50%);*/
+    color: white;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    top: 0px;
 }
