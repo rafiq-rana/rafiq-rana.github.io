@@ -70,3 +70,8 @@
     min-height: 100vh;
   }
 }
+@media (max-width:992px){
+	.social-icons{
+		display: none;
+	}
+}
