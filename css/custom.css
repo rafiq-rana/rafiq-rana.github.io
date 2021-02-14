@@ -12,13 +12,6 @@
 .container #about img {
   object-fit: cover;
 }
-.carousel-indicators li {
-  border: none;
-  background: #ccc;
-}
-.carousel-indicators li.active {
-  background: #28a745;
-}
 #sideNav .navbar-brand .img-profile {
   max-width: 11rem;
   max-height: 11rem;
@@ -179,16 +172,4 @@ section#contact form#contactForm :-ms-input-placeholder {
 .hero-text button:hover {
   background-color: orange;
   color: white;
-}
-.hero-text {
-    text-align: center;
-    position: relative;
-    /* [disabled]width: 35rem; */
-    left: 18%;
-    /*    transform: translate(-70%, -50%);*/
-    color: white;
-    bottom: 0px;
-    right: 0px;
-    overflow: hidden;
-    top: 0px;
 }

@@ -70,8 +70,19 @@
     min-height: 100vh;
   }
 }
-@media (max-width:992px){
-	.social-icons{
-		display: none;
-	}
+@media (max-width:992px) {
+  .social-icons {
+    display: none;
+  }
+  .jumbotron {
+    color: white;
+    background-image: url("../assets/img/header-rana1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+  }
+  .hero-text {
+    font-size: 14px;
+  }
 }
