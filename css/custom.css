@@ -173,3 +173,43 @@ section#contact form#contactForm :-ms-input-placeholder {
   background-color: orange;
   color: white;
 }
+.hero-text {
+    text-align: center;
+    position: relative;
+    /* [disabled]width: 35rem; */
+    left: 18%;
+    /*    transform: translate(-70%, -50%);*/
+    color: white;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    top: 0px;
+}
+
+/*
+*
+* ==========================================
+* Carousel quotes
+* ==========================================
+*
+*/
+
+.width-auto {
+  width: auto;
+}
+
+.text-lg {
+  font-size: 2rem;
+}
+
+.carousel-indicators li {
+  border: none;
+  background: #ccc;
+}
+
+.carousel-indicators li.active {
+  background: #28a745;
+}
+/*
+* ==========================================
+*/
