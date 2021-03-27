@@ -177,3 +177,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .title-block h2{
 	font-size: 70px;
 }
+
+.title-block p{
+	font-size: 20px;
+}
