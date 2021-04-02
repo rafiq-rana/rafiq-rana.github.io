@@ -1,5 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
+
+.text-5{
+	font-size: 1.3125rem !important;
+}
+
 .bg-navbar {
   background-color: #0e1415 !important;
 }
