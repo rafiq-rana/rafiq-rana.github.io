@@ -179,17 +179,17 @@ section#contact form#contactForm :-ms-input-placeholder {
 	border-right: 2px solid white;
 	transform: rotate(45deg);
 	margin: -10px;
-	animation: animate 2s infinite;
+	animation: animate 5s infinite;
 }
 
 .box span:nth-child(2)
 {
-	animation-delay: -0.1s;
+	animation-delay: -0.2s;
 }
 
 .box span:nth-child(3)
 {
-	animation-delay: -0.2s;
+	animation-delay: -0.4s;
 }
 
 @keyframes animate{
