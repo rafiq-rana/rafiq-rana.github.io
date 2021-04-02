@@ -1,17 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
-<<<<<<< HEAD
 .text-5{
 	font-size: 1.3125rem !important;
 }
 
-=======
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Oswald", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
->>>>>>> origin/develop
 .bg-navbar {
   background-color: #0e1415 !important;
 }
