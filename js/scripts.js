@@ -2,6 +2,11 @@
   // Start of use strict
   "use strict";
 
+  $(window).load(function () {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (
@@ -34,7 +39,6 @@
   $("body").scrollspy({
     target: "#sideNav",
   });
-	
-	
-	
+
+
 })(jQuery); // End of use strict
